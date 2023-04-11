@@ -6,6 +6,8 @@ import FontSizerSlider from "./FontSizerSlider";
 import FontSizerButtons from "./FontSizerButtons";
 import TextAlignButtons from './TextAlignButtons';
 import LifecycleClock from './LifecycleClock';
+import ColorChanger from './ColorChanger';
+import RGBSliders from './RGBSliders';
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         <FontSizerSlider />
         <TextAlignButtons />
         <LifecycleClock />
+        <ColorChanger />
+        <RGBSliders />
       </header>
     </div>
   );
