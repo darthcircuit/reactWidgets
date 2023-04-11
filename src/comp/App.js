@@ -5,8 +5,9 @@ import ShowHide from "./ShowHide";
 import FontSizerSlider from "./FontSizerSlider";
 import FontSizerButtons from "./FontSizerButtons";
 import TextAlignButtons from './TextAlignButtons';
+import LifecycleClock from './LifecycleClock';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header>
@@ -17,9 +18,9 @@ function App() {
         <FontSizerButtons />
         <FontSizerSlider />
         <TextAlignButtons />
+        <LifecycleClock />
       </header>
     </div>
   );
 }
 
-export default App;
