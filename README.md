@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# React Widgets Assigment - Part 1 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create and mount the following React components: 
 
-## Available Scripts
+1. Counter
+  - Render a count value to the dom
+  - Render two buttons, "add" and a "subtract"
+  - The buttons will effectively add or subtract from the count, and render the new value on the dom. 
+  *Don't let the count go below zero.
 
-In the project directory, you can run:
+2. Greeting Toggle
+  - Render some "hello" greeting
+  - Render a button, "Toggle Me"
+  - The button will toggle the greeting between a "hello" and "goodbye" every time it's clicked.
 
-### `npm start`
+3. Show / Hide Toggle
+  - Render text on the dom. "Hide Me"
+  - Render a button. "Show / Hide".
+  - The button will either show, or hide the text on the page. 
+  *The button text should be conditionally rendered. IE: If the text is displayed, the button should say "Hide", and if it's hidden the button should say "Show".
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. FontSizer - 
+ - Renders 2 buttons (Grow, Shrink) and a font size.
+ - Each button should change the size of the font displayed in increments (try something like 5px up and down).
+ - There should be a minimum and maximum size. (maybe 5px - 100px)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. TextAligner -
+ - Renders a line of text
+ - Renders 3 buttons (left, center, right)
+ - Each button should align the text left of the screen, center screen, and right of the screen
 
-### `npm test`
+6. Lifecycle Clock
+- Render a component that displays a button
+- On Click, the button will mount / unmount (text should update on the button) a clock component
+- The Clock Component should "tick" every second
+- When unmounting, you must cleanup the interval to avoid a memory leak
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. ColorChanger
+- Render an <h1> Label that represents a color
+- Render a text input
+- Render a button
+- When clicked, the button will update the text and the color of the <h1> through state
+- The input should clear everytime the button is clicked.
+- IE: typing the word "yellow" in the input will render the word "yellow" in the <h1>, with a 
+  font-color of yellow.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. RGBSliders
+- Render a small box with a solid background color
+- Render a label underneath (rgb(0, 0, 0))
+- Render three range slider input elements.
+- When sliding an input, it should update a corresponding value (either the r, g, or b)
+- The background color of the small box should update to the appropriate color
+- The label should update appropriately as you slide
